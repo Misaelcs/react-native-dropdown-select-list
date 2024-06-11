@@ -4,6 +4,11 @@ import { ViewStyle, TextStyle } from 'react-native';
 
 export interface SelectListProps  {
     /**
+    * Value of the width of the view in percentage
+    */
+    width: number
+
+    /**
     * Fn to set Selected option value which will be stored in your local state
     */
     setSelected: Function,

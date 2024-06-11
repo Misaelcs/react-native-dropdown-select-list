@@ -37,7 +37,8 @@ const SelectList: React.FC<SelectListProps> =  ({
         onSelect = () => {},
         save = 'key',
         dropdownShown = false,
-        fontFamily
+        fontFamily,
+        width = 100
     }) => {
 
     const oldOption = React.useRef(null)
@@ -118,7 +119,7 @@ const SelectList: React.FC<SelectListProps> =  ({
 
 
     return(
-        <View>
+        <View style={{width: width+'%'}}>
             {
                 (dropdown && search)
                 ?
